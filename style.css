@@ -1,0 +1,76 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: cadetblue;
+    height: 50px;
+    justify-content: flex-end;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+nav > div {
+    border: white 1px solid;
+    color: white;
+    background-color: teal;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#accordion {
+    margin-top: -7px;
+}
+#accordion > div {
+    padding: 10px;
+    color: black;
+    background-color: yellow;
+
+}
+#progressbar {
+    background-color: black;
+    color: black;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#accordion > h3 {
+    padding: 10px;
+    color: black;
+    background-color: orange;
+    border-bottom: black solid 1px;
+}
+#date, #datepicker {
+    color: black;
+    background-color: yellow;
+
+}
+#progressbar, #progressbar2, #progressbar3 {
+    background-color: white;
+    width: 100px;
+    border: black solid 1px;
+}
+.Testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.testimonial {
+    width: 33%;
+    height: 200px;
+    overflow-y: scroll;
+}
+.ui-progressbar {
+    position: relative;
+  }
+  .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    color: black;
+}
+a {
+    color: white;
+}

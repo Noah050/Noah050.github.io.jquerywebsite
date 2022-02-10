@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <title>JqueryIndex</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="home"><a href="">Home</a></div>
+        <div class="calendar"><a href="">Calendar</a></div>
+        <div class="about"><a href="">About</a></div>
+    </nav>
+    <header><img src="bird.jpg" width="100%" height="700px" alt=""></header>
+        <div id="accordion">
+            <h3>Testimonials</h3>
+            <div class="Testimonials">
+              <div class="testimonial"><div id="progressbar"><div class="progress-label">80%</div></div> <br>Testimonial: Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, fugit assumenda. Reiciendis, alias porro cumque dolorum saepe sint, doloremque et culpa tempore minus esse repellendus fugiat enim excepturi odio quis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, fugit assumenda. Reiciendis, alias porro cumque dolorum saepe sint, doloremque et culpa tempore minus esse repellendus fugiat enim excepturi odio quis?</div>
+              <div class="testimonial"><div id="progressbar2"><div class="progress-label">65%</div></div> <br>Testimonial: Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, fugit assumenda. Reiciendis, alias porro cumque dolorum saepe sint, doloremque et culpa tempore minus esse repellendus fugiat enim excepturi odio quis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, fugit assumenda. Reiciendis, alias porro cumque dolorum saepe sint, doloremque et culpa tempore minus esse repellendus fugiat enim excepturi odio quis?</div>
+              <div class="testimonial"><div id="progressbar3"><div class="progress-label">95%</div></div> <br> Testimonial: Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, fugit assumenda. Reiciendis, alias porro cumque dolorum saepe sint, doloremque et culpa tempore minus esse repellendus fugiat enim excepturi odio quis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, fugit assumenda. Reiciendis, alias porro cumque dolorum saepe sint, doloremque et culpa tempore minus esse repellendus fugiat enim excepturi odio quis?</div>
+            </div>
+            <h3>Sign Up</h3>
+            <div>
+              <p>
+              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+              suscipit faucibus urna.
+              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto iste unde est ipsum aspernatur dolore, recusandae ex nostrum, error mollitia numquam minus eum omnis atque! Minima ducimus soluta quas.
+              </p>
+            </div>
+            <h3>Log In</h3>
+            <div>
+              <p>
+              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto iste unde est ipsum aspernatur dolore, recusandae ex nostrum, error mollitia numquam minus eum omnis atque! Minima ducimus soluta quas.
+              </p>
+              <ul>
+                <a href=""><i>Log In Form</i></a>
+              </ul>
+            </div>
+            <h3>Calendar</h3>
+            <div>
+              <p id="date">Date: <input type="text" id="datepicker"></p>
+            </div>
+          </div>
+          
+    </section>
+</body>
+<script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+ 
+  $( "#progressbar" ).progressbar({
+  value:80
+});
+  $( "#progressbar2" ).progressbar({
+  value:65
+});
+  $( "#progressbar3" ).progressbar({
+  value:95
+});
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</html>
